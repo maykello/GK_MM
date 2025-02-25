@@ -216,7 +216,7 @@
         
         graphics.strokeHexadecagon = function(x,y,r) {
             this.beginPath();
-            this.moveTo(x + r * Math.cos(0), y + r * Math.sin(0));
+            this.moveTo(x + r, y);
             for (var i = 1; i < 16; i++) {
                 this.lineTo(x + r * Math.cos(i * Math.PI / 8), y + r * Math.sin(i * Math.PI / 8));
             }
@@ -225,7 +225,7 @@
         }
         graphics.fillHexadecagon = function(x,y,r) {
             this.beginPath();
-            this.moveTo(x + r * Math.cos(0), y + r * Math.sin(0));
+            this.moveTo(x + r, y);
             for (var i = 1; i < 16; i++) {
                 this.lineTo(x + r * Math.cos(i * Math.PI / 8), y + r * Math.sin(i * Math.PI / 8));
             }
